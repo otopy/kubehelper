@@ -20,7 +20,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone &
                     nginx && \
                     rm -rf /var/cache/apt && rm -rf /var/lib/apt/lists/*
 
-RUN wget hhttps://releases.hashicorp.com/terraform/0.14.0/terraform_0.14.0_linux_amd64.zip && \
+RUN wget https://releases.hashicorp.com/terraform/0.14.0/terraform_0.14.0_linux_amd64.zip && \
     unzip terraform_0.14.0_linux_amd64.zip && \
     rm terraform_0.14.0_linux_amd64.zip && \
     mv terraform /bin && \
